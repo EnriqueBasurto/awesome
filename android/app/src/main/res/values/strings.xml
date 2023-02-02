@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">AwesomeProject</string>
-    <string moduleConfig="true" name="CodePushDeploymentKey">IZcmHrRMq3m6jpuy2adfBbN1K5N8nfwZGXVAD</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">lIPGNvlQTwWrp_CRDcdcz-uNn78kfqwwy0A92</string>
     <string name="appCenterCrashes_whenToSendCrashes" moduleConfig="true" translatable="false">DO_NOT_ASK_JAVASCRIPT</string>
     <string name="appCenterAnalytics_whenToEnableAnalytics" moduleConfig="true" translatable="false">ALWAYS_SEND</string>
 </resources>
