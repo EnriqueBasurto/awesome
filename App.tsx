@@ -84,13 +84,13 @@ function App(): JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Paso 1">
+          <Section title="Paso One">
             Edita <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
-            <TouchableOpacity onPress={onButtonPress}>
-              <Text>Check for updates</Text>
-            </TouchableOpacity>
           </Section>
+          <TouchableOpacity onPress={onButtonPress}>
+            <Text>Check for updates</Text>
+          </TouchableOpacity>
           <Section title="See Your Changes">
             <ReloadInstructions />
           </Section>
@@ -123,6 +123,7 @@ const styles = StyleSheet.create({
   },
   highlight: {
     fontWeight: '700',
+    color: 'blue',
   },
 });
 
