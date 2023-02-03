@@ -13,6 +13,7 @@ import {
   StatusBar,
   StyleSheet,
   Text,
+  TouchableOpacity,
   useColorScheme,
   View,
 } from 'react-native';
@@ -62,6 +63,13 @@ function App(): JSX.Element {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
+  const onButtonPress = () => {
+    codePush.sync({
+      updateDialog: true,
+      installMode: codePush.InstallMode.IMMEDIATE,
+    });
+  };
+
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar
@@ -76,9 +84,12 @@ function App(): JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
+          <Section title="Paso 1">
+            Edita <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
+            <TouchableOpacity onPress={onButtonPress}>
+              <Text>Check for updates</Text>
+            </TouchableOpacity>
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
